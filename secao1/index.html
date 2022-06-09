@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: sans-serif;
+        }
+        body{
+            background-color: black;
+            color: white;
+        }
+        div{
+            text-align: center;
+            margin: 0px auto;
+            margin-top: 40vh;
+        }
+        div h1{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Hello World</h1>
+        <p>Clique aqui</p>
+    </div>
+<script>
+    let clique = document.querySelector("p")
+        clique.onclick = function nome(){
+            let nome_user = String(prompt("Digite seu nome completo"));
+            let h1 = document.querySelector("h1");
+                h1.textContent = `- Hello ${nome_user} - `; 
+        }
+</script>
+</body>
+</html>
